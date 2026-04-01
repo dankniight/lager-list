@@ -212,15 +212,16 @@
     <table id="lagerTable">
       <thead>
         <tr>
-          <th style="width: 22%;">Lager Name</th>
-          <th style="width: 20%;">Country</th>
-          <th style="width: 8%;">Bag</th>
-          <th style="width: 8%;">Chimp</th>
-          <th style="width: 8%;">Damo</th>
-          <th style="width: 8%;">Dank</th>
-          <th style="width: 8%;">Jamie</th>
-          <th style="width: 8%;">Pin</th>
-          <th style="width: 8%;">Rod</th>
+          <th style="width: 20%;">Lager Name</th>
+          <th style="width: 18%;">Country</th>
+          <th style="width: 7%;">Bag</th>
+          <th style="width: 7%;">Matt</th>
+          <th style="width: 7%;">Damo</th>
+          <th style="width: 7%;">Dank</th>
+          <th style="width: 7%;">Jamie</th>
+          <th style="width: 7%;">Pin</th>
+          <th style="width: 7%;">Rod</th>
+          <th style="width: 7%;">Tim</th>
         </tr>
       </thead>
       <tbody id="tableBody">
@@ -411,14 +412,14 @@
       const newLager = {
         name: name,
         country: country,
-        bag: null,
-        chimp: null,
-        damo: null,
-        dank: null,
-        jamie: null,
-        pin: null,
-        rod: null,
-        tim: null
+        Bag: null,
+        Matt: null,
+        Damo: null,
+        Dank: null,
+        Jamie: null,
+        Pin: null,
+        Rod: null,
+        Tim: null
       };
 
       const { error } = await supabase.from('lagers').insert(newLager);
